@@ -24,6 +24,6 @@ public class BookController {
         // model.addAttribute adds attribute named books to the model, which contains all books retrieved from the repo
         // books is the key used to access this data in the view such as ${books}
         model.addAttribute("books", bookRepository.findAll()); // calls repo to retrieve all book entities from DB
-        return "books"; // the view name you want rendered, such as books.html found in the template dir
+        return "books/list"; // the view name you want rendered, such as list.html found in the template dir
     }
 }
